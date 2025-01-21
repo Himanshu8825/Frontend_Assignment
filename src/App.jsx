@@ -7,7 +7,7 @@ const App = () => {
   };
 
   const PrivateRoute = ({ element }) => {
-    return isAuthenticated() ? element : <Navigate to="/" replace />;
+    return isAuthenticated() ? element : <Navigate to="/"  />;
   };
 
   return (

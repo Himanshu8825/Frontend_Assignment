@@ -10,7 +10,7 @@ const Home = () => {
 
   const handleLogout = () => {
     localStorage.removeItem('token');
-    navigate('/login');
+    navigate('/');
   };
 
   const filteredProducts = products.filter((product) =>

@@ -7,12 +7,12 @@ const App = () => {
   };
 
   const PrivateRoute = ({ element }) => {
-    return isAuthenticated() ? element : <Navigate to="/login" replace />;
+    return isAuthenticated() ? element : <Navigate to="/" replace />;
   };
 
   return (
     <Routes>
-      <Route path="/login" element={<Login />} />
+      <Route path="/" element={<Login />} />
       <Route path="/home" element={<PrivateRoute element={<Home />} />} />
     </Routes>
   );
